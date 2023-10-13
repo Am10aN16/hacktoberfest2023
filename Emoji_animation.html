@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Emoji_animation</title>
+        <link rel="stylesheet" href="portfolio.css">
+        <script src="https://kit.fontawesome.com/d8c95d9bd2.js" crossorigin="anonymous"></script>
+        <style>
+            .emoji-animetion{
+    font-size: 15px;
+    animation: myEmoji;
+    animation-duration: 1.8s;
+    animation-iteration-count: infinite;
+    display: inline-block;
+    transform-origin: 70% 70%;
+    padding: 200px 500px;
+}
+@keyframes myEmoji{
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    10% {
+        -webkit-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+    }
+    20% {
+        -webkit-transform: rotate(12deg);
+        transform: rotate(12deg);
+    }
+    30% {
+        -webkit-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+    }
+    40% {
+        -webkit-transform: rotate(9deg);
+        transform: rotate(9deg);
+    }
+    50% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);    
+}
+}
+        </style>
+    </head>
+    <body>
+        <span class="emoji-animetion">
+            <img src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/1f44b.png" alt="" style="font-size: 50px;">
+         </span>
+    </body>
+</html>
