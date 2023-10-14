@@ -1,0 +1,34 @@
+
+/* this is a beautiful css loader without no border which will give a professional touch to your weeb projects. */
+
+
+/* code for html part
+<div>
+    <div class="nb-spinner"></div>
+  </div>
+*/
+
+/* code for css */
+
+
+body {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #263238;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  font-family: Arial;
+}
+
+.nb-spinner {
+  width: 75px;
+  height: 75px;
+  margin: 0;
+  background: transparent;
+  border-top: 4px solid #009688;
+  border-right: 4px solid transparent;
+  border-radius: 50%;
+  -webkit-animation: 1s spin linear infinite;
+  animation: 1s spin linear infinite;
+}
