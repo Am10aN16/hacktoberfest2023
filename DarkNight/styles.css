@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-image: url('4.png'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-position: center center;
+}
+
+.night {
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    position: relative;
+}
+
+.lightning {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    opacity: 0;
+    animation: lightningFlash 8s linear infinite; 
+}
+
+.image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container img {
+    width: 200px;
+}
+
+@keyframes lightningFlash {
+    0%, 100% {
+        opacity: 0;
+    }
+    5%, 25%, 45%, 65%, 85% {
+        opacity: 0.4;
+    }
+    10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90% {
+        opacity: 0;
+    }
+}
+
