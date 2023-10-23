@@ -1,0 +1,22 @@
+/* CSS Animation */
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Apply Animation to an Element */
+.element-to-animate {
+  width: 100px;
+  height: 100px;
+  background-color: #3498db;
+  /* Apply Animation */
+  animation: rotate 2s linear infinite;
+}
+/* In this code:
+
+@keyframes rotate: Defines the animation sequence. It starts at 0 degrees and rotates to 360 degrees infinitely.
+.element-to-animate: This is the class that you would apply to the HTML element you want to animate. You can modify the class name and the styles (width, height, background-color, etc.) according to your requirements. */
