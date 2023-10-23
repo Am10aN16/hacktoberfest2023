@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Matrix Effect</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="output"></div>
+    <script>
+      const canvas = document.createElement("canvas");
+      const ctx = canvas.getContext("2d");
+      canvas.setAttribute("width", "1350");
+      canvas.setAttribute("height", "630");
+      document.body.prepend(canvas);
+      const colVal = [];
+      for (let x = 0; x < 1350; x++) {
+        colVal.push(0);
+      }
+      console.log(colVal);
+      function matrix() {
+        ctx.fillStyle = "rgba(0,0,0,.05)";
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        ctx.fillStyle = "#fcaf17";
+        colVal.map((posY, index) => {
+          let output = Math.random() < 0.5 ? 0 : 1;
+          let posX = index * 10 + 10;
+          ctx.fillText(output, posX, posY);
+          if (posY > 400 + Math.random() * 630) {
+            colVal[index] = 0;
+          } else {
+            colVal[index] = posY + 10;
+          }
+        });
+      }
+      console.log(colVal);
+    //   matrix();
+      setInterval(matrix, 50);
+    </script>
+  </body>
+</html>
