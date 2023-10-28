@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Webpage</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo">Logo</a>
+            <u1>
+                <li><a href="#"> Home </a></li>
+                <li><a href="#"> About </a></li>
+                <li><a href="#"> Contact </a></li>
+            </u1>
+        </header>
+        <section>
+            <img src="" id="">
+            <img src="" id="">
+            <img src="" id="">
+            <h2 id="text">SCROLL DOWN</h2>
+            <a href="#" id="btn">Explore</a>
+            <img src="" id="">
+
+        </section>
+        <div class="sec" id="sec">
+            <h2>
+               Parallax Scrolling Effects
+            </h2>
+            <p>
+                Parallax scrolling is a popular visual effect used in web design, video games, and multimedia applications to create a sense of depth and motion within a 2D environment. It involves dividing the content into different layers, typically a background and a foreground, and moving these layers at different speeds as the user interacts with the content. The background layer typically moves more slowly than the foreground, creating the illusion of depth and dimension. This effect simulates how objects closer to the viewer move faster than distant objects in real life, enhancing the visual experience. Parallax scrolling can be used in various ways, such as in web design to make websites more engaging, in video games to create immersive 2D environments, or in interactive presentations to add visual interest and depth to the content. The intensity of the parallax effect can vary, ranging from subtle depth enhancements to more pronounced, immersive experiences, depending on the specific design goals.
+            </p>
+        </div>
+        <script>
+            let text= document.getElementById('text');
+            let btn= document.getElementById('btn');
+             
+            window.addEventListener('scroll' , function(){
+                let value=window.scrollY;
+                text.style.marginRight= value * 4 + 'px';
+            })
+        </script>
+    </body>
+</html>
