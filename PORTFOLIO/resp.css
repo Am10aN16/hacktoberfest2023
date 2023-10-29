@@ -1,0 +1,245 @@
+@media(max-width:680px) {
+
+    html {
+        margin: auto;
+        width: auto;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .logo img {
+        position: absolute;
+        z-index: 2;
+        top: 2vh;
+
+        left: 8vw;
+    }
+
+    .links {
+        display: block;
+        position: relative;
+        z-index: 10;
+        top: 9rem;
+        left: 20%;
+        /* background-color:#1d252f; */
+        height: 15rem;
+        width: 10rem;
+        display: none;
+    }
+
+    .links li {
+        line-height: 3rem;
+    }
+
+    #bg {
+        height: 15vh;
+        top: 18rem;
+    }
+
+    @keyframes cyan {
+        from {
+            left: 63%;
+        }
+
+        to {
+            left: 65%;
+        }
+
+    }
+
+    .frame img {
+        height: 25vh;
+    }
+
+    hr {
+        margin-left: 9vw;
+        width: 24rem;
+    }
+
+    .left {
+        position: relative;
+        z-index: 12;
+        margin-left: 25vw;
+    }
+
+    .left h3 {
+        font-size: 17px;
+        margin-bottom: 1vh;
+    }
+
+    .left h1 {
+        font-size: 20px;
+        margin-bottom: 1vh;
+
+    }
+
+    .left p {
+        font-size: 9px;
+        margin-bottom: 1vh;
+
+    }
+
+    #element {
+        font-size: 25px;
+    }
+
+    .photo img {
+        height: 25vh;
+    }
+
+    .info p {
+        font-size: 11px;
+    }
+
+    .icon {
+        margin-top: 2vh;
+    }
+
+    .icon i {
+        font-size: 11px;
+    }
+
+    .education {
+        display: block;
+
+    }
+
+    .study {
+        text-align: center;
+        width: 100%;
+
+
+    }
+
+    .edu h2 {
+        font-size: 18px;
+    }
+
+    .edu p {
+        font-size: 13px;
+    }
+
+    .tech {
+        width: 100%;
+        margin-top: 9rem;
+        margin-left:3rem;
+        text-align: center;
+
+    }
+   .tech ul li{
+    margin-left: 18vw;
+   }
+
+
+    .tech h2 {
+        font-size: 18px;
+    }
+
+    .bx h2 {
+        font-size: 15px;
+
+    }
+
+    .bx p {
+        font-size: 10px;
+
+    }
+
+    .service {
+        margin-left: 5rem;
+    }
+
+    .sampark {
+        width: 86%;
+        text-align: center;
+    }
+
+    .sampark input {
+        width: 10rem;
+    }
+
+    .sampark textarea {
+        width: 15rem;
+        margin-right: -18vw;
+    }
+
+    #btn {
+        width: 5rem;
+    }
+
+    .proj {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .cd button {
+        width: 6rem;
+    }
+    .card{
+        margin-left: 13vw;
+    }
+
+    .cd img {
+        height: 23vh;
+    }
+
+    #btn-hbg {
+        display: block;
+        
+    }
+  
+
+    .foot {
+        margin-left: 15vw;
+    }
+  #cnt{
+    margin-left: 10vw;
+  }
+ .layer{
+    width: 50%;
+ }
+
+
+}
+@media (min-width:410px) {
+    #bg{
+        top:24rem;
+    }
+    hr{
+        width: 30rem;
+    }
+    form{
+        margin-left: 8rem;
+    }
+    .card{
+        margin-left:9vw;
+    }
+    #about{
+        margin-left: 7rem;
+    }
+    .base h3{
+       margin-left: 5vw;
+       width: 30rem;
+       text-align: center;
+    
+    }
+    .education{
+        margin-left: 2.5rem;
+    
+    }
+}
+    @media (min-width:700px) {
+        #bg{
+        top: 12rem;
+
+    }
+    hr{
+        width: 80rem;
+    }
+    .card{
+        margin-left: 0;
+    }
+  
+}
