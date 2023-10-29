@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "gilroy";
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  width: 100%;
+  height: 100vh;
+  /* background-color: black; */
+}
+
+#back {
+  width: 100%;
+  height: 100vh;
+}
+
+#back img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#top {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  /* background-color: #000000; */
+}
+
+#workingarea {
+  position: relative;
+  margin: 0 auto;
+  width: 80%;
+  height: 100vh;
+  max-width: 1920px;
+  /* border : 1px solid red; */
+}
+
+#nav {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+}
+
+#nav img {
+  height: 40px;
+}
+
+#nleft,
+#nright {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+#nav a {
+  pointer-events: all;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  
+  font-weight: 600;
+  color: #fff;
+}
+
+#hero {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0%, -50%);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#heroleft {
+  min-width: 50%;
+}
+
+#heroleft .elem {
+    position: relative;
+  height: 9vw;
+  overflow: hidden;
+}
+
+#heroleft .elem h1:nth-child(1){
+    top:0;
+}
+
+#heroleft .elem h1 {
+    position: absolute;
+    top:100%;
+    left:0;
+  line-height: 0.9;
+  font-family: "kajiro";
+  color: #fff;
+  font-weight: 100;
+  font-size: 11vw;
+}
+
+#heroleft button {
+  pointer-events: all;
+  padding: 0.8vw 3vw;
+  font-size: 4vw;
+  margin-top: 3vw;
+  font-family: "kajiro";
+}
+
+#heroright {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 17%;
+  color: #fff;
+}
+
+#heroright p {
+  font-size: 14px;
+  font-weight: 300;
+  text-align: right;
+}
+
+#heroright #imagediv {
+  width: 100%;
+  height: 170px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  background-image: url(https://images.unsplash.com/photo-1644519797407-df9b4f9782fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MnxOZENFZkhWbjdqNHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60);
+  background-size: cover;
+  background-position: center;
+}
+
+
+#heroright p:nth-child(3) {
+  margin-bottom: 100px;
+}
