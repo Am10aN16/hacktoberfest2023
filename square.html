@@ -2,6 +2,9 @@
 <html>
 <head>
     <style>
+        *{
+            background-color: gray;
+        }
         @keyframes example {
             0%   {background-color: red; left: 0px; top: 0px;}
             25%  {background-color: yellow; left: 200px; top: 0px;}
@@ -10,7 +13,16 @@
             100% {background-color: red; left: 0px; top: 0px;}
         }
 
-        div {
+        .cen{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            height: 300px;
+            width: 300px;
+        }
+        .box {
             width: 100px;
             height: 100px;
             position: relative;
@@ -18,12 +30,19 @@
             animation-name: example;
             animation-duration: 4s;
             animation-iteration-count: infinite;
+            border-radius: 10px;
+
+
         }
     </style>
 </head>
 <body>
 
-    <div></div>
+    <div class="cen">
+        <div class="box"></div>
+
+    </div>
+
 
 </body>
 </html>
