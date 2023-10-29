@@ -28,7 +28,7 @@ body{
   height: 6px;
   background: #262626;
   border-radius: 3px;
-  animation: animate 4s linear infinite;
+  animation: animate 60s linear infinite; /* Slower animation */
   transform-origin: left;
 }
 
@@ -42,7 +42,7 @@ body{
   height: 6px;
   background: #262626;
   border-radius: 3px;
-  animation: animate 48s linear infinite;
+  animation: animate 3600s linear infinite;  /* 60 minutes */
   transform-origin: left;
 }
 span
@@ -53,7 +53,7 @@ span
         left: 50%;
         transform: translate(-50%,-50%);
         width: 12px;
-        height: 10px;
+        height: 12px; /* Slightly larger circles */
         background: #ff5f5f;
         border-radius: 50%;
         z-index: 1;
