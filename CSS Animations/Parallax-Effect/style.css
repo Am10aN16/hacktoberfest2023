@@ -1,0 +1,128 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box;
+}  
+.wrapper{
+    height: 100vh;
+    overflow-x:hidden;
+    perspective: 10px;
+}
+.container{
+    position: relative;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    transform-style:preserve-3d;
+    z-index: -2;
+
+
+}
+.mountain,.man{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+
+    
+}
+.mountain{
+    transform: translateZ(-40px) scale(6);
+}
+.man{
+    transform: translateZ(-20px) scale(3);
+}
+.parallax{
+    position: absolute;
+    color: white;
+    font-size: 6rem;
+    top: 20%;
+   
+}
+.lowest-div{
+    background-color: aqua;
+    width: 620px;
+    height: 111px;
+    position: absolute;
+    top: 20%;
+    z-index: -2;
+    border-radius:1rem;
+    
+}
+.below-text{
+    background-color: brown;
+    position: absolute;
+    width: 620px;
+    height: 111px;
+    top: 20%;
+    opacity: 0.6;
+    z-index: -1;
+    border-radius: 1rem;
+    transition:tarnsform 1s ease 1s;
+    transform: scaleX(0);
+
+
+}
+.below-text:hover{
+    cursor: pointer;
+   transform: scaleX(1);
+    
+}
+section{
+    background-color: rgb(45,45,45);
+    color: white;
+    
+    /* text-align: center; */
+    /* font-size: 2rem; */
+    /* padding: 3rem; */
+}  
+.Adventure{
+    padding: 0 10rem;
+    font-size:3.5rem ;
+    /* background-color: brown; */
+    /* color: black; */
+
+}
+.para{
+    font-size: 1.5rem;
+    margin: 5rem;
+    padding: 0 10rem;
+}
+.bg1{
+    background-image: url(./images/Binking.jpg);
+}
+.bg2{
+    background-image: url(./images/paragliding.jpg);
+}
+.bg3{
+    background-image: url(./images/surfing.jpg);
+    /* background-size: fixed; */
+}
+.bg{
+    position:relative;
+    width: 100%;
+    background-attachment: fixed;
+    height: 16rem;
+    background-size: cover;
+}
+.description{
+    
+    position: absolute;
+    background-color: lightcyan;
+    font-size: 3.5rem;
+    color: black;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    padding: 1.5rem;
+}
+
+/* .bg{
+    background-color: lightgray;
+    font-size: 2rem;
+    text-align: center;
+    max-width:1rem ;
+} */
